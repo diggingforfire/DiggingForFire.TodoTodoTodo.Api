@@ -10,6 +10,6 @@ jobs:
       command:
        dotnet restore
    - run:
-      name: Build application
+      name: Build and package application
       command:
-       dotnet build
+       dotnet publish --no-restore -c Release
