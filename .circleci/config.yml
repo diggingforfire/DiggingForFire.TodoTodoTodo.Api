@@ -12,4 +12,6 @@ jobs:
    - run:
       name: Build and package application
       command:
-       dotnet publish --no-restore -c Release
+       dotnet publish ./DiggingForFire.TodoTodoTodo.Api/DiggingForFire.TodoTodoTodo.Api.csproj --no-restore -c Release -o ./package
+   - store_artifacts:
+      path: 
