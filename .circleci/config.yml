@@ -14,4 +14,4 @@ jobs:
       command:
        dotnet publish ./DiggingForFire.TodoTodoTodo.Api/DiggingForFire.TodoTodoTodo.Api.csproj --no-restore -c Release -o ./package
    - store_artifacts:
-      path: 
+      path: ./package
