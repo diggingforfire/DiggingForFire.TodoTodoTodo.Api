@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json.Serialization;
 
 namespace DiggingForFire.TodoTodoTodo.Api
 {
@@ -16,7 +17,9 @@ namespace DiggingForFire.TodoTodoTodo.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services
+                .AddControllers()
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
