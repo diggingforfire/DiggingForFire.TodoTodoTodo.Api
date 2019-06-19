@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using DiggingForFire.TodoTodoTodo.Application.Interfaces;
+using DiggingForFire.TodoTodoTodo.Application.Services;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +22,8 @@ namespace DiggingForFire.TodoTodoTodo.Api
             services
                 .AddControllers()
                 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
+
+            services.AddTransient<ITodoService, TodoService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
