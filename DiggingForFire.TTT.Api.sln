@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiggingForFire.TTT.Api", "DiggingForFire.TodoTodoTodo.Api\DiggingForFire.TTT.Api.csproj", "{C6DF5ACA-E9D5-44EA-8168-B73C132E7704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiggingForFire.TTT.Api", "DiggingForFire.TTT.Api\DiggingForFire.TTT.Api.csproj", "{C6DF5ACA-E9D5-44EA-8168-B73C132E7704}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiggingForFire.TTT.Application", "DiggingForFire.TodoTodoTodo.Application\DiggingForFire.TTT.Application.csproj", "{C5BACC4C-41C9-469A-8DB1-FCEC511CD4FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiggingForFire.TTT.Application", "DiggingForFire.TTT.Application\DiggingForFire.TTT.Application.csproj", "{C5BACC4C-41C9-469A-8DB1-FCEC511CD4FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiggingForFire.TTT.Application.Models", "DiggingForFire.TodoTodoTodo.Application.Models\DiggingForFire.TTT.Application.Models.csproj", "{DD2DC613-B2E7-423D-9ECB-C904C9A34817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiggingForFire.TTT.Application.Models", "DiggingForFire.TTT.Application.Models\DiggingForFire.TTT.Application.Models.csproj", "{DD2DC613-B2E7-423D-9ECB-C904C9A34817}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{D8DAE00B-5941-4472-B80C-15AF9EE1C9B8}"
 	ProjectSection(SolutionItems) = preProject

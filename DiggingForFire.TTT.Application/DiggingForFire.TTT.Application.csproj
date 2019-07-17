@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DiggingForFire.TodoTodoTodo.Application.Models\DiggingForFire.TTT.Application.Models.csproj" />
     <ProjectReference Include="..\DiggingForFire.TTT.DataAccess\DiggingForFire.TTT.DataAccess.csproj" />
+    <ProjectReference Include="..\DiggingForFire.TTT.Domain\DiggingForFire.TTT.Domain.csproj" />
   </ItemGroup>
 
 </Project>
