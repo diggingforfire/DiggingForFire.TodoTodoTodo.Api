@@ -1,23 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using DiggingForFire.TodoTodoTodo.Application.Interfaces;
-using DiggingForFire.TodoTodoTodo.Application.Models;
+using DiggingForFire.TTT.Application.Interfaces;
+using DiggingForFire.TTT.DataAccess;
+using DiggingForFire.TTT.Domain;
+using Microsoft.EntityFrameworkCore;
 
-namespace DiggingForFire.TodoTodoTodo.Application.Services
+namespace DiggingForFire.TTT.Application.Services
 {
     public class TodoService : ITodoService
     {
+        private readonly ITodoContext _todoContext;
+
+        public TodoService(ITodoContext todoContext)
+        {
+            _todoContext = todoContext ?? throw new ArgumentNullException(nameof(todoContext));
+        }
+
         public async Task<IReadOnlyCollection<Todo>> GetTodosAsync()
         {
-            await Task.Delay(20);
+            var queryable =
+                from todo in _todoContext.Todos
+                select todo;
 
-            var list = (IReadOnlyCollection<Todo>)new List<Todo>(new []
-            {
-                new Todo { Title = "Boodschapjes doen", Description = "Op zaterdag" },
-                new Todo { Title = "Cd's opruimen", Description = "Misschien nog wat bewaren" }
-            }).AsReadOnly();
+            var todos = await queryable.ToListAsync().ConfigureAwait(false);
 
-            return list;
+            return todos.AsReadOnly();
         }
     }
 }

@@ -1,9 +1,9 @@
 ﻿using System;
-using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using DiggingForFire.TodoTodoTodo.Application.Interfaces;
+using DiggingForFire.TTT.Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
-namespace DiggingForFire.TodoTodoTodo.Api.Controllers
+namespace DiggingForFire.TTT.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

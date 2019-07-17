@@ -1,11 +1,8 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using DiggingForFire.TodoTodoTodo.Application.Models;
+using DiggingForFire.TTT.Domain;
 
-namespace DiggingForFire.TodoTodoTodo.Application.Interfaces
+namespace DiggingForFire.TTT.Application.Interfaces
 {
     public interface ITodoService
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace DiggingForFire.TodoTodoTodo.Api
+namespace DiggingForFire.TTT.Api
 {
     public class Program
     {
