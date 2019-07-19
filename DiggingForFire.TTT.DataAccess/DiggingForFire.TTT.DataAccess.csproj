@@ -12,4 +12,11 @@
     <ProjectReference Include="..\DiggingForFire.TTT.Domain\DiggingForFire.TTT.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="NuGet.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
